@@ -1,5 +1,26 @@
+:root {
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    --accent-color: #2196F3;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list{
+    list-style: none;
+    
+}
+
+body{
+    font-family: var(--main-font);
+}
+
+/* ---------- header ---------- */
+
 .logo {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--secondary-font);
     font-weight: bold;
     font-size: 26px;
     line-height: 1.19;
@@ -8,28 +29,174 @@
 }
 
 .logo-part{
-    color: #2196F3;
+    color: var(--accent-color);
 }
+
+
+
 .menu-link{
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.15;
     letter-spacing: 0.02em;
     color: #212121;
+    text-decoration: none;
 }
 
 .menu-link:hover,
-.menu-link:focus{
-    color: #2196F3;
+.menu-link:focus,
+.mail-link:hover,
+.mail-link:focus,
+.tel-link:hover,
+.tel-link:focus{
+    color: var(--accent-color);
+}
+
+.mail-link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
 }
 
 .tel-link{
-    font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 1.15;
-letter-spacing: 0.02em;
-color: #757575;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
 }
+
+/* ---------- end header ---------- */
+
+
+
+/* ---------- hero ---------- */
+
+.hero-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    /*color: #FFFFFF;*/
+}
+.modal-btn{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: white;
+}
+
+
+
+/* ---------- Advantages ---------- */
+
+.advantages-title{
+    
+    
+}
+
+.advantages-subtitle{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.description{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/* ---------- end Advantages ---------- */
+
+/* ---------- what we do ---------- */
+
+
+
+/* ---------- end what we do ---------- */
+
+/* ---------- team ---------- */
+
+
+/* ---------- end team ---------- */
+
+/* ---------- footer ---------- */
+
+.logo-second-part{
+    color: #FFFFFF;
+    }
+
+.footer-link{
+    font-family: var(--main-font);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-decoration: none;
+    list-style: none;
+}
+/* ---------- end footer ---------- */
+
+
+/* ---------- portfolio btn list ---------- */
+
+.portfolio-btn-list{
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    list-style: none;
+    cursor: pointer;
+}
+
+.portfolio-btn-list:hover,
+.portfolio-btn-list:focus{
+    background-color: var(--accent-color);
+    color: white;
+}
+/* ---------- end portfolio btn list ---------- */
+
+/* ---------- portfolio project list ---------- */
+
+.portfolio-project-list{
+    list-style: none;
+}
+
+.project-title{
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+
+.project-main-text{
+    font-family: var(--main-font);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+/* ---------- end portfolio project list ---------- */
